@@ -7,7 +7,7 @@
     "prebuild": "rm -rf ./prod",
     "build": "tsc",
     "lint": "eslint src",
-    "start": "node ./prod/index.js",
+    "start": "node -r dotenv/config ./prod/index.js",
     "test": "echo 'No tests yet'"
   },
   "repository": {
@@ -29,6 +29,8 @@
     "prettier": "^2.3.2"
   },
   "dependencies": {
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
     "winston": "^3.3.3"
   }
 }
