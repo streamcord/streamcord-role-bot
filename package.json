@@ -1,0 +1,36 @@
+{
+  "name": "streamcord-role-bot",
+  "version": "1.0.0",
+  "description": "A bot to assign roles for the PTB server.",
+  "main": "prod/index.js",
+  "scripts": {
+    "prebuild": "rm -rf ./prod",
+    "build": "tsc",
+    "lint": "eslint src",
+    "start": "node -r dotenv/config ./prod/index.js",
+    "test": "echo 'No tests yet'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhcarrigan/streamcord-role-bot.git"
+  },
+  "author": "Nicholas Carrigan",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/nhcarrigan/streamcord-role-bot/issues"
+  },
+  "homepage": "https://github.com/nhcarrigan/streamcord-role-bot#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
+    "winston": "^3.3.3"
+  }
+}
