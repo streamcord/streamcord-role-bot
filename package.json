@@ -1,6 +1,6 @@
 {
   "name": "streamcord-role-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A bot to assign roles for the PTB server.",
   "main": "prod/index.js",
   "scripts": {
