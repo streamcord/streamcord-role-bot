@@ -34,7 +34,7 @@ import { logHandler } from "./utils/logHandler";
       return;
     }
 
-    if (message.member?.roles.cache.has(role.id)) {
+    if (message.member?.roles.cache.has(role.id) || message.author.bot) {
       return;
     }
 
